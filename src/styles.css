@@ -1,7 +1,16 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: skyblue;
 }
 
 div {
   font-size: 50px;
+  color: #eeee;
 }
