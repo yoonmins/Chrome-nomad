@@ -1,15 +1,28 @@
 import "./styles.css";
 
-function handleResize() {
-  let resizeWidth = document.body.offsetWidth;
+let app = document.getElementById("app");
 
-  if (resizeWidth < 500) {
-    document.body.style.backgroundColor = "green";
-  } else if (resizeWidth < 800) {
-    document.body.style.backgroundColor = "blue";
-  } else if (resizeWidth < 1000) {
-    document.body.style.backgroundColor = "skyblue";
-  }
+function handleMoseover() {
+  app.style.color = "purple";
+  app.innerHTML = "The Mouse is here!";
 }
 
-window.addEventListener("resize", handleResize);
+function handleMoseleave() {
+  app.style.color = "skyblue";
+  app.innerHTML = "The Mouse is over!";
+}
+
+function handleWindowContextmenu() {
+  app.style.color = "red";
+  app.innerHTML = "That was a right click";
+}
+
+function handleWindowResize() {
+  app.style.color = "green";
+  app.innerHTML = "You just resized";
+}
+
+app.addEventListener("mouseover", handleMoseover);
+app.addEventListener("mouseleave", handleMoseleave);
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("contextmenu", handleWindowContextmenu);
