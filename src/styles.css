@@ -14,3 +14,15 @@ div {
   font-size: 50px;
   color: #eeee;
 }
+
+.smallScreen {
+  background-color: brown;
+}
+
+.mediumScreen {
+  background-color: skyblue;
+}
+
+.bigScreen {
+  background-color: yellow;
+}
