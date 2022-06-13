@@ -1,28 +1,27 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
-  font-family: sans-serif;
   width: 100vw;
   height: 100vh;
-  background: skyblue;
 }
 
-div {
-  font-size: 50px;
-  color: #eeee;
+input {
+  height: 20px;
 }
 
-.smallScreen {
-  background-color: brown;
+button {
+  height: 20px;
+  font-size: 10px;
 }
 
-.mediumScreen {
-  background-color: skyblue;
+.Game-tilte {
+  margin-bottom: 14px;
 }
 
-.bigScreen {
-  background-color: yellow;
+#Game-input-number {
+  margin-bottom: 14px;
 }
