@@ -1,38 +1,31 @@
 import "./styles.css";
 
-// const GmaeChose = document.querySelector(".Game-chose");
-const GameOutput = document.querySelector(".Game-output");
-const ChoseNumber = document.querySelector("#Game-input-number").value;
-const GuessNumber = document.querySelector("#Game-guess").value;
+const FormExample = document.querySelector("#form-example");
+const GuessInput = document.querySelector("#Game-chose input");
+const YourChose = document.querySelector("#Game-output span:first-child");
+const MachineChose = document.querySelector("#Game-output span:last-child");
+const result = document.querySelector("#Game-result strong");
 
-const GameResult = document.querySelector(".Game-result");
-
-// const RandomNumberOutput = Math.floor(Math.random() * ChoseNumber);
-
-function RandomNumberOutput() {
-  document.querySelector("#chose-number").innerText = ChoseNumber;
+function GenrateRandom(min, max) {
+  const ranNum = Math.floor(Math.random() * (max - min + 1) + min);
+  return ranNum;
 }
 
-function ChoseGuessNumber() {
-  document.querySelector("#random-number").innerText = GuessNumber;
-}
+function buttonClick(event) {
+  event.preventDefault();
 
-document
-  .querySelector(".Game-guess-button")
-  .addEventListener("click", function OutputNumber(event) {
-    document.querySelector(".random-number").innerHTML =
-      "You chose : " +
-      ChoseGuessNumber +
-      ",the machine chose : " +
-      RandomNumberOutput +
-      ".";
-  });
+  let max = document.getElementById("Game-input").value;
+  const GuessInputNumber = Number(GuessInput.value);
+  const RandomNumber = GenrateRandom(0, max);
 
-function Result() {
-  if (ChoseNumber === GuessNumber) {
-    ("You won!");
+  YourChose.innerText = `You chose:${GuessInputNumber}`;
+  MachineChose.innerText = `, machine chose: ${RandomNumber}`;
+
+  if (GuessInputNumber === RandomNumber) {
+    result.innerText = "You won!";
   } else {
-    ("You lost!");
+    result.innerText = "You lost!";
   }
 }
-GameResult.innerHTML = Result();
+
+FormExample.addEventListener("submit", buttonClick);
