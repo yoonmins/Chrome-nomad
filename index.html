@@ -16,48 +16,51 @@
   <body>
     <section class="Game">
       <h1 class="Game-tilte">Random Number Game</h1>
-      <div class="Game-input">
-        <strong>
-          <label for="Game-input-number">
-            Generate a number between 0 and
+      <form action="" method="get" class="form-example">
+        <div class="Game-input">
+          <strong>
+            <label for="Game-input-number">
+              Generate a number between 0 and
+            </label>
+            <input
+              type="number"
+              id="Game-input-number"
+              name="Game-input-number"
+              min="0"
+              onkeyup="ChoseGuessNumber()"
+            />
+          </strong>
+        </div>
+        <div class="Game-chose">
+          <label for="Game-guess">
+            Guess the number :
           </label>
-        </strong>
-        <input
-          type="number"
-          id="Game-input-number"
-          name="Game-input-number"
-          min="0"
-        />
-      </div>
-      <div class="Game-chose">
-        <label for="Game-chose-guess">
-          Guess the number :
-        </label>
-        <input
-          type="number"
-          id="Game-chose-guess"
-          name="Game-chose-guess"
-          min="0"
-        />
-        <button type="button">
-          Play!
-        </button>
-      </div>
-      <div class="Game-output">
-        <!-- <span>
-          You chose :
-        </span>
-        <span class="chose-number">
-          0
-        </span>
-        <span>
-          the machine chose:
-        </span>
-        <span class="random-number">
-          0
-        </span> -->
-      </div>
-      <strong class="Game-result"></strong>
+          <input
+            type="number"
+            id="Game-guess"
+            name="Game-guess"
+            min="0"
+            onkeyup="RandomNumberOutput()"
+          />
+          <button class="Game-guess-button" type="button">Play!</button>
+        </div>
+        <div class="Game-output">
+          <span id="chose-number"> </span>
+          <span id="random-number"> </span>
+          <div class="Game-result"></div>
+        </div>
+      </form>
+      <!-- <div class="form-example">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+          <input type="submit" value="Subscribe!">
+        </div> -->
     </section>
   </body>
 </html>
