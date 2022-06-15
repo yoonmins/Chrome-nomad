@@ -37,13 +37,26 @@ button {
   flex-direction: column;
 }
 
-.Time h1,
-strong {
+.Time h1 {
   color: #6aa84f;
 }
 
-.Time strong {
+#Clock {
+  color: #6aa84f;
   display: block;
-  font-size: 21px;
+  font-size: 25px;
+  font-weight: 550;
   margin-top: 13px;
+}
+
+.setting {
+  margin-top: 20px;
+  color: #ffe599;
+  font-size: 10px;
+}
+
+.christmas-img {
+  position: absolute;
+  transform: translateY(-115px);
+  width: 450px;
 }
