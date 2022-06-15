@@ -26,3 +26,24 @@ button {
 #Game-input-number {
   margin-bottom: 14px;
 }
+
+.Time {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(165, 42, 42, 0.95);
+  flex-direction: column;
+}
+
+.Time h1,
+strong {
+  color: #6aa84f;
+}
+
+.Time strong {
+  display: block;
+  font-size: 21px;
+  margin-top: 13px;
+}
