@@ -14,19 +14,20 @@ input {
   font-size: 10px;
 }
 
-button {
-  height: 20px;
-  font-size: 10px;
-}
-
+/* Random Number Game */
 .Game-tilte {
   margin-bottom: 14px;
+}
+
+.Game-tilte button {
+  height: 20px;
+  font-size: 10px;
 }
 
 #Game-input-number {
   margin-bottom: 14px;
 }
-
+/* Christams Timer */
 .Time {
   display: flex;
   width: 100vw;
@@ -59,4 +60,22 @@ button {
   position: absolute;
   transform: translateY(-115px);
   width: 450px;
+}
+
+/* Background Color Button */
+#backGround {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(0.25turn, #008080, #ff6e4a); */
+}
+
+#backGround #btn {
+  width: 150px;
+  height: 40px;
+  color: #ffff;
+  box-shadow: 3px 2px 2px rgba(75, 75, 75, 0.98);
+  background-color: royalblue;
 }
