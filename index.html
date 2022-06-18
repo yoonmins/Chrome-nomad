@@ -13,14 +13,38 @@
     <!-- <script src="src/nomad5.js" defer></script> -->
     <!-- <script src="src/randomGame.js" defer></script> -->
     <!-- <script src="src/chrTimer.js" defer></script> -->
-    <script src="src/backColor.js" defer></script>
+    <!-- <script src="src/backColor.js" defer></script> -->
   </head>
   <body>
-    <div
-      id="backGround"
-      style="background: linear-gradient(0.25turn, #424242, #eeeeee);"
-    >
-      <button id="btn" type="button">Give me color!</button>
+    <div id="weather">
+      <span></span>
+      <span></span>
     </div>
+    <form id="login_form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To DO and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="Chrom/Login.js"></script>
+    <script src="Chrom/clock.js"></script>
+    <script src="Chrom/quotes.js"></script>
+    <script src="Chrom/background.js"></script>
+    <script src="Chrom/todo.js"></script>
+    <script src="Chrom/weather.js"></script>
   </body>
 </html>
