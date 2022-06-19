@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const quotes = [
   {
     quote: "게으른 자여 개미에게 가서 그가 하는 것을 보고 지혜를 얻으라",
@@ -51,8 +49,8 @@ const quotes = [
   }
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".quote div:first-child");
+const author = document.querySelector(".quote div:last-child");
 
 const toDayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 

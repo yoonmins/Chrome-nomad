@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoiList = document.getElementById("todo-list");

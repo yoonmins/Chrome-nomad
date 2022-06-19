@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/869f10c14c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./main2.css" rel="stylesheet" type="text/css" />
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
     <!-- <script src="src/index.js" defer></script> -->
     <!-- <script src="src/nomad5.js" defer></script> -->
     <!-- <script src="src/randomGame.js" defer></script> -->
@@ -16,29 +22,103 @@
     <!-- <script src="src/backColor.js" defer></script> -->
   </head>
   <body>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
-    <form id="login_form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To DO and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+    <section class="Main">
+      <section class="main_1">
+        <div class="info">
+          <div class="weather_info">Today Weather☀️</div>
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+          <form id="login_form" class="hidden">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="What is your name?"
+            />
+            <button><i class="fas fa-sign-in-alt"></i></button>
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="Todo">
+          <div class="todo-list-title">
+            <i class="fas fa-clipboard-check"></i>To Do List
+          </div>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write down your To Do List!"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </section>
+
+      <section class="main_2">
+        <ul class="shortcuts">
+          <li class="s_google">
+            <a href="https://www.google.com/"
+              ><i class="fa-brands fa-google"></i>Google</a
+            >
+          </li>
+          <li class="s_naver">
+            <a href="https://www.naver.com/"
+              ><img src="Chrom/img/logo/naver.jpeg" alt="" />Naver</a
+            >
+          </li>
+          <li class="s_github">
+            <a href="https://github.com/yoonmins"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li class="s_stack">
+            <a href="https://stackoverflow.com/"
+              ><img src="Chrom/img/logo/stack.png" alt="" />Stack overflow</a
+            >
+          </li>
+          <li class="s_sandbox">
+            <a href="https://codesandbox.io/dashboard/home"
+              ><img src="Chrom/img/logo/sandbox.png" alt="" />Codesandbox</a
+            >
+          </li>
+          <li class="s_nomad">
+            <a href="https://nomadcoders.co/"
+              ><img src="Chrom/img/logo/nomad.png" alt="" />Nomad</a
+            >
+          </li>
+
+          <li class="s_boj">
+            <a href="https://www.acmicpc.net/"
+              ><i class="fa-solid fa-code"></i>BOJ</a
+            >
+          </li>
+        </ul>
+        <div class="quote">
+          <div class="quote_word"></div>
+          <div class="quote_human"></div>
+        </div>
+        <div class="player">
+          <canvas></canvas>
+          <div class="song">
+            <div class="artist">Charlie Puth</div>
+            <div class="name">That’s Hilarious</div>
+          </div>
+          <div class="playarea">
+            <div class="prevSong"></div>
+            <div class="play"></div>
+            <div class="pause"></div>
+            <div class="nextSong"></div>
+          </div>
+          <div class="time">00:00</div>
+        </div>
+        <div class="logo">
+          <i class="fa-brands fa-react"></i>
+        </div>
+      </section>
+    </section>
 
     <script src="Chrom/Login.js"></script>
     <script src="Chrom/clock.js"></script>

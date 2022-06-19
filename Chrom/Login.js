@@ -7,7 +7,6 @@ const USERNAME_KEY = "username";
 
 function onLoginSunbmit(event) {
   event.preventDefault();
-  //브라우저의 submit행동을 막아준다.
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
